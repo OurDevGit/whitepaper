@@ -1,0 +1,31 @@
+.info-icon-wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    p {
+      span.link {
+        color: #00d1c1;
+        font-weight: 600;
+        text-decoration: underline;
+      }
+    }
+    .info-icon {
+      width: 16px;
+      height: 16px;
+      position: relative;
+      z-index: 102;
+      &:hover {
+        path:first-child {
+          fill: #00d1c1;
+        }
+        path:last-child {
+          stroke: #fff;
+        }
+        & + .arrow-box {
+          display: block;
+        }
+      }
+    }
+  }
