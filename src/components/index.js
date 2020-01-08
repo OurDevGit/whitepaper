@@ -8,3 +8,4 @@ export { default as GetFinancing } from './GetFinancing';
 export { default as OurPartners } from './OurPartners';
 export { default as Quotes } from './Quotes';
 export { default as InfoIcon } from './InfoIcon';
+export { default as NumberCircle } from './NumberCircle';

@@ -1,6 +1,8 @@
 import React from 'react'
 import { Grid, Header } from 'semantic-ui-react';
 import { InfoIcon } from '../../../components';
+import { NumberCircle } from '../../../components';
+import Circle from './Circle/';
 const HowItWorks = () => (
   <div id="cso-works">
     <Grid container>
@@ -65,6 +67,8 @@ const HowItWorks = () => (
                 This means that investor enthusiasm helps the company raise more capital, given that the company receives capital for each newly minted token. This capital, in turn, helps investors by enabling the company to invest and grow, creating a virtuous circle. 
             </p>
             {/* add Image */}
+            <Circle />
+
             <p className="content-text">
                 Likewise, the CSO enables the company to dedicate a certain percentage of the proceeds from newly minted tokens — say 10% — to the reserve fund. This “investor contribution” becomes the property of the token holders, 
                 alongside the revenues committed by the company. As such, a high level of buying can marginally increase  the reserve value, helping provide price stability independent of the company’s revenue contribution.

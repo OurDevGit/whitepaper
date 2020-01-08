@@ -4,6 +4,8 @@ import './style.less'
 import companyCaptureWithCSO from '../../../assets/images/whitepaper/company-capture1.svg'
 import companyCaptureWithoutCSO from '../../../assets/images/whitepaper/company-capture2.svg'
 import MainItems from './MainItems';
+import COmpanyItems from './CompanyItems';
+import CompanyItems from './CompanyItems'
 
 const Introduction = () => (
   <div className="whitepaper-introduction-section" id="introduction">
@@ -17,10 +19,17 @@ const Introduction = () => (
              <p className="top-text">
                 Consider this: although <a>AirBnB’s 650,000 hosts</a> are critical to its success, most of the $35 billion in value created by the company will flow to a small number of investors. The CSO was designed to disrupt this model and balance the playing field.
               </p>
-            <p className="caption">Company Value Captured</p>
-            <img src={companyCaptureWithCSO} />
-            <p className="caption">Company Value Captured</p>
-            <img src={companyCaptureWithoutCSO} />
+            <CompanyItems />
+            <div class="chart_content">
+                <p className="caption">Company Value Captured</p>
+                <img src={companyCaptureWithCSO} />
+                <span id="red">Without CSO</span>
+            </div>
+            <div class="chart_content">
+                <p className="caption">Company Value Captured</p>
+                <img src={companyCaptureWithoutCSO} />
+                <span id="blue">With CSO</span>
+            </div>
             <p className="top-text">
                 Fairmint provides a turnkey cloud-based web application that enables companies to raise funding through a CSO with confidence and minimal effort. Using Fairmint technology, a company can easily run a CSO on its own website or app, raising capital and letting investors trade in securities backed by a portion of the company’s revenues. Fairmint’s goal is to disrupt the investment banking industry by providing companies with financing solutions that are fairer and easier to manage.
             </p>

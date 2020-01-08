@@ -1,0 +1,33 @@
+.Number-icon-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  // margin-left: 5px;
+  p {
+    span.link {
+      color: #00d1c1;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+  }
+  .Number-icon {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    border: 1px solid;
+    border-radius: 50%;
+    z-index: 102;
+    &:hover {
+      path:first-child {
+        fill: #00d1c1;
+      }
+      path:last-child {
+        stroke: #fff;
+      }
+      & + .arrow-box {
+        display: block;
+      }
+    }
+  }
+}
