@@ -3,6 +3,10 @@ import { Grid, Header } from 'semantic-ui-react';
 import Cylinder from '../components/cylinder';
 import { InfoIcon } from '../../../components';
 import { LeftArrowIcon, RightArrowIcon } from '../../../assets/icons';
+import lifeCircle from '../../../assets/images/life-circle.svg'
+import MainItem from '../Summary/MainItem';
+import MainItems from './MainItems';
+import './style.less';
 const Lifecycle = () => (
   <div id="lifecycle">
     <Grid container>
@@ -12,6 +16,7 @@ const Lifecycle = () => (
                 The CSO has three stages to its lifecycle: initialization, running and closing.
                 </p>
             {/* inseret diagram */}
+            <img src={lifeCircle} />
             <p className="sub-title" id="initial-stage">
                 Initialization Stage:
                 </p>
@@ -47,7 +52,8 @@ const Lifecycle = () => (
                 When the CSO offering’s minimum duration arrives, the company has two options:
                 </p>
             {/* inseret diagram */}
-            <Grid style={{ marginBottom: '30px'}} >
+            <MainItems />
+            {/* <Grid style={{ marginBottom: '30px'}} >
                 <Grid.Row three only="mobile">
                     <Grid.Column  width={3}>
                         <p  style={{fontSize: "20px", paddingTop: '70px'}}>Our tech</p>
@@ -122,7 +128,7 @@ const Lifecycle = () => (
                         </Grid.Column>
                     </Grid.Row>
                     
-            </Grid>
+            </Grid> */}
             
             
             <p className="content-text">

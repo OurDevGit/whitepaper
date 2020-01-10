@@ -4,7 +4,6 @@ import './style.less'
 import companyCaptureWithCSO from '../../../assets/images/whitepaper/company-capture1.svg'
 import companyCaptureWithoutCSO from '../../../assets/images/whitepaper/company-capture2.svg'
 import MainItems from './MainItems';
-import COmpanyItems from './CompanyItems';
 import CompanyItems from './CompanyItems'
 
 const Introduction = () => (

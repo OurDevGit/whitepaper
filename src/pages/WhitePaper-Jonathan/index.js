@@ -48,7 +48,7 @@ class WhitePaper extends Component {
                     <Equity/>
                     <HowItWorks/>
                     <Lifecycle/>
-                    <Tokens/>
+                    {/* <Tokens/> */}
                   </Grid.Column>
                   <Grid.Column width={5}>
                     <ContentList />
